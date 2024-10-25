@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Servive</title>
+</head>
+<body>
+    <div>
+        <P style="text-align: center;"><img src="Untitled.png" alt="#" class="logo" width="30%" >
+        </P>        
+    </div>
+
+    <div style="text-align: center;">
+        <p><H2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" style="font-size: 2;" style="text-align: center;">Call Apple Support</H2>
+            <H3 style="border: 6px;"> <p class="button",style="font-family: Verdana, Geneva, Tahoma, sans-serif;"  style="border-style: solid;"> <a href="tel:18337143958" class="num"> +1833-714 3958</a> </p></H3>
+        </p></div>
+
+    <div><P class="para">
+        For any info or assistance required with regards to the services provided by Apple Support, you can reach out to our customer service department for help. If You are looking for Support Solutions, got Apple Support account queries, or need help in managing investments Apple services, or any other services order; Call Our Experts. Quality support awaits you.
+    </P></div>
+
+    <style>
+
+        .para{
+            font-family:'verdana';
+            font-size: 15px;
+            margin-bottom:'10px';
+
+        }
+
+        .num{ 
+            color: black;
+
+        }
+
+        
+.modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+   top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;             padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            border-radius: 5px;
+        }
+.close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        .button{
+            background-color: aliceblue;
+            color: black;
+            margin-top: 30px;
+            padding: 8px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            border-radius: 24px;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2em;
+        }
+    </style>
+  <div id="callModal" class="modal">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <h2>Connect to a Apple Expert</h2>
+        <p>Call Now +1(833) 714-8145</p>
+        <button id="confirmCall" class="call-button">Yes, Call Now</button>
+        <button id="cancelCall" class="call-button" style="background-color: #dc3545;">Cancel</button>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("callModal");
+    var callButton = document.getElementById("callButton");
+    var closeModal = document.getElementsByClassName("close")[0];
+    var confirmCall = document.getElementById("confirmCall");
+    var cancelCall = document.getElementById("cancelCall");
+
+
+    window.onload = function() {
+        modal.style.display = "block";
+    };
+
+    // Close the modal
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // Confirm the call
+    confirmCall.onclick = function() {
+        console.log("Call button clicked!"); // Debugging log
+        window.location.href = "tel:+18337143958"; // Redirect to call
+    };
+
+    cancelCall.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    
+    document.getElementById('acceptCookies').onclick = function() {
+        document.querySelector('.cookie-banner').style.display = 'none';
+    };
+
+</script>
+
+
+<footer>
+    <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>
